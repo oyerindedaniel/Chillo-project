@@ -1,0 +1,112 @@
+.header-about {
+
+    &__conatiner--1 {
+        font-weight: 500;
+        background-color: $color-black;
+        color: $color-white;
+        padding: 7.5rem 15rem;
+        padding-left: 10rem;
+        flex: 0 0 58%;
+    }
+
+    &__conatiner--2 {
+        background-image: url(../img/bag.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        flex: 1;
+    }
+
+    &__div {
+        background-image: linear-gradient(to left top, rgba($color-blue-dark, .7), rgba($color-blue-light, .7));
+        clip-path: polygon(100% 0%, 0 65%, 0 100%, 100% 100%);
+        width: 100%;
+        height: 100%;
+
+
+        &--sub {
+            font-weight: 700;
+            color: $color-white;
+            padding: 5.5rem;
+            padding-left: 4rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 35%;
+            width: 100%;
+
+            &-1 {
+                display: flex;
+                align-items: center;
+
+                &-h3 {
+                    flex: 0 0 45%;
+                    margin-right: auto;
+                }
+
+                &-h2 {
+                    position: relative;
+
+                    &::before {
+                        content: "USD";
+                        display: inline-block;
+                        position: absolute;
+                        top: 1rem;
+                        right: 0;
+                        margin-right: -2.2rem;
+                    }
+                }
+            }
+
+            &-2 {
+                margin-top: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &-1 {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &-para {
+                    color: rgba($color-grey-light-1, .7);
+                    font-weight: 400;
+                    margin-right: -2.2rem;
+                }
+
+                &-icon {
+                    margin-right: .8rem;
+                    border-radius: 50%;
+                    background-color: $color-yellow-dark;
+                    @include iconsize;
+                }
+            }
+
+        }
+    }
+
+    &__lists {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        list-style: none;
+        padding-top: 6rem;
+
+        &:first-of-type {
+            border-top: .05rem solid rgba($color-grey-light-1, .5);
+        }
+    }
+
+    &__icon {
+        margin-right: .8rem;
+        border-radius: 50%;
+        background-color: #75b79e;
+        fill: $color-black;
+        @include iconsize;
+    }
+
+}

@@ -1,0 +1,25 @@
+.btn {
+    font-family: $font-1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: none;
+    color: $color-white;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+
+    &--blue {
+        background-color: $color-blue-dark;
+
+        &:hover {
+            background-color: rgba($color-blue-dark, .95);
+        }
+    }
+
+    &--yellow {
+        background-color: $color-yellow-dark;
+
+        &:hover {
+            background-color: rgba($color-yellow-dark, .95);
+        }
+    }
+}

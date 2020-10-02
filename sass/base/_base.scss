@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-1;
+    background-color: $color-white;
+    color: $color-black;
+}
+
+
+//::selection {
+//    background-color: $color-blue-1;
+//    color: $color-white;
+//}

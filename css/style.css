@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #fff;
+  color: #000; }
+
+.highlight-header {
+  color: #feb72b; }
+
+.typo--big {
+  font-size: 5rem; }
+
+.typo--medium {
+  font-size: 4.1rem; }
+
+.typo--medium-2 {
+  font-size: 2.5rem; }
+
+.typo--small {
+  font-size: 1.5rem; }
+
+.typo--smaller {
+  font-size: 1.2rem; }
+
+.para {
+  font-size: 1.05rem; }
+
+.margin-bottom-big {
+  margin-bottom: 4rem; }
+
+.margin-top-large {
+  margin-top: 8rem; }
+
+.margin-right {
+  margin-right: 1rem; }
+
+.btn {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-decoration: none; }
+  .btn--blue {
+    background-color: #111d5e; }
+    .btn--blue:hover {
+      background-color: rgba(17, 29, 94, 0.95); }
+  .btn--yellow {
+    background-color: #feb72b; }
+    .btn--yellow:hover {
+      background-color: rgba(254, 183, 43, 0.95); }
+
+.header-about__conatiner--1 {
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 7.5rem 15rem;
+  padding-left: 10rem;
+  flex: 0 0 58%; }
+
+.header-about__conatiner--2 {
+  background-image: url(../img/bag.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  flex: 1; }
+
+.header-about__div {
+  background-image: linear-gradient(to left top, rgba(17, 29, 94, 0.7), rgba(7, 121, 228, 0.7));
+  clip-path: polygon(100% 0%, 0 65%, 0 100%, 100% 100%);
+  width: 100%;
+  height: 100%; }
+  .header-about__div--sub {
+    font-weight: 700;
+    color: #fff;
+    padding: 5.5rem;
+    padding-left: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35%;
+    width: 100%; }
+    .header-about__div--sub-1 {
+      display: flex;
+      align-items: center; }
+      .header-about__div--sub-1-h3 {
+        flex: 0 0 45%;
+        margin-right: auto; }
+      .header-about__div--sub-1-h2 {
+        position: relative; }
+        .header-about__div--sub-1-h2::before {
+          content: "USD";
+          display: inline-block;
+          position: absolute;
+          top: 1rem;
+          right: 0;
+          margin-right: -2.2rem; }
+    .header-about__div--sub-2 {
+      margin-top: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header-about__div--sub-2-1 {
+        display: flex;
+        align-items: center; }
+      .header-about__div--sub-2-para {
+        color: rgba(244, 242, 242, 0.7);
+        font-weight: 400;
+        margin-right: -2.2rem; }
+      .header-about__div--sub-2-icon {
+        margin-right: .8rem;
+        border-radius: 50%;
+        background-color: #feb72b;
+        height: 1.1rem;
+        width: 1.1rem; }
+
+.header-about__lists {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center; }
+
+.header-about__items {
+  list-style: none;
+  padding-top: 6rem; }
+  .header-about__items:first-of-type {
+    border-top: 0.05rem solid rgba(244, 242, 242, 0.5); }
+
+.header-about__icon {
+  margin-right: .8rem;
+  border-radius: 50%;
+  background-color: #75b79e;
+  fill: #000;
+  height: 1.1rem;
+  width: 1.1rem; }
+
+.number-users {
+  color: #111d5e;
+  font-weight: 700; }
+  .number-users-0 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+  .number-users__img {
+    margin-right: 2rem; }
+  .number-users__users-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .number-users__users-name {
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.8); }
+
+.nav {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem; }
+  .nav__logo {
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    margin-left: 10rem;
+    position: relative; }
+  .nav__logo::after {
+    content: "Online Study";
+    display: block;
+    text-transform: uppercase;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 15rem; }
+  .nav__items {
+    font-weight: 700;
+    list-style: none;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center; }
+  .nav__links {
+    padding: 1rem; }
+    .nav__links:first-of-type {
+      padding: 0 2rem;
+      border-right: 0.2rem solid #f4f2f2; }
+  .nav__link {
+    padding: 1.5rem;
+    color: inherit;
+    text-decoration: none !important;
+    display: inline-block;
+    transition: all .5s; }
+    .nav__link--span {
+      display: flex;
+      align-items: center; }
+    .nav__link:hover, .nav__link:focus {
+      outline: none;
+      background-color: #f4f2f2;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 0.1rem 0.05rem rgba(0, 0, 0, 0.3); }
+    .nav__link:active {
+      box-shadow: 0 0.02rem 0.02rem rgba(0, 0, 0, 0.3); }
+  .nav__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: .5rem; }
+
+.container {
+  padding: 4rem; }
+
+.header-about {
+  display: flex; }
+
+.number-users {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  padding: 0 12rem; }
