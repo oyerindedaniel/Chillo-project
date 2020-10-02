@@ -1,0 +1,278 @@
+.package {
+    padding-bottom: 20rem;
+    background-color: $color-grey-light-1;
+    font-weight: 700;
+
+
+    &__typo {
+        padding-top: 8rem;
+        text-align: center;
+    }
+
+    &__h6 {
+        text-transform: uppercase;
+        color: $color-blue-dark;
+    }
+
+    &__items {
+        color: $color-grey-dark-2;
+    }
+
+    &__item {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        text-transform: uppercase;
+    }
+
+    &__link {
+        border: .05rem solid rgba($color-grey-dark-2, .5);
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        margin: 0;
+
+        &:hover {
+            color: $color-blue-dark;
+            background-color: $color-white;
+            border-bottom: .15rem solid $color-blue-dark;
+        }
+    }
+
+    &-main {
+        padding: 0 8rem;
+        display: flex;
+        justify-content: space-between;
+
+        &__0 {
+            padding: 0 5rem;
+            flex: 0 0 50%;
+        }
+
+        &__h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        &__h6 {
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        &__1 {
+            padding: 0 7rem;
+            flex: 1;
+            margin-left: 2rem;
+        }
+    }
+
+    &__items-0 {
+        margin-bottom: 5rem;
+    }
+
+    &__item-0 {
+        list-style: none;
+    }
+
+    &__list-0 {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: .8rem;
+        border-radius: 50%;
+        background-color: $color-yellow-dark;
+        fill: $color-white;
+        @include iconsize;
+    }
+
+    &__dollars {
+
+        &-span {
+            position: relative;
+
+            &::before {
+                content: "USD";
+                display: inline-block;
+                position: absolute;
+                font-size: 1rem;
+                top: .5rem;
+                right: 0;
+                margin-right: -2.2rem;
+            }
+        }
+
+        &-detail {
+            color: rgba($color-grey-dark-1, .8);
+            padding: .5rem 0 2.5rem 0;
+            border-bottom: .1rem solid rgba($color-grey-dark-2, .5);
+        }
+    }
+
+    &__hours {
+        display: flex;
+        justify-items: center;
+        justify-content: space-between;
+        padding: 2rem 0 2.5rem 0;
+        border-bottom: .1rem solid rgba($color-grey-dark-2, .5);
+
+        &-0-span-1 {
+            position: relative;
+
+            &::before {
+                content: "HOURS";
+                display: inline-block;
+                position: absolute;
+                font-size: 1rem;
+                top: .5rem;
+                right: 0;
+                margin-right: -4rem;
+            }
+        }
+
+        &-0-span-2 {
+            position: relative;
+
+            &::before {
+                content: "HOURS";
+                display: inline-block;
+                position: absolute;
+                font-size: 1rem;
+                top: .5rem;
+                right: 0;
+                margin-right: -4rem;
+            }
+        }
+
+        &-0-detail {
+            color: rgba($color-grey-dark-1, .8);
+        }
+    }
+
+    &__infinte {
+
+        &-detail {
+            color: rgba($color-grey-dark-1, .8);
+            padding: 0 0 2.5rem 0;
+            border-bottom: .1rem solid rgba($color-grey-dark-2, .5);
+        }
+
+    }
+
+    //PACKAGE PRICE
+    &-prices {
+        padding: 0 13rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12rem;
+
+        &__card {
+            width: 30rem;
+            height: 48rem;
+            background-color: $color-white;
+            position: relative;
+            transition: transform .4s;
+            box-shadow: 0 .5rem 1.5rem rgba($color-black, .3);
+            overflow: hidden;
+
+            &-2 {
+                margin-top: -3rem;
+                background-color: $color-blue-dark;
+                height: 55rem;
+            }
+
+            &:hover {
+                transform: translateY(-1.5rem);
+            }
+        }
+
+        &__card-0 {
+            background-size: cover;
+            height: 22rem;
+            clip-path: polygon(100% 70%, 0 100%, 0 0, 100% 0%);
+            z-index: 0;
+            overflow: hidden;
+
+            &-1 {
+                background-image: url(../img/ecommerce1.jpg);
+            }
+
+            &-2 {
+                background-image: url(../img/ecommerce2.jpg);
+            }
+
+            &-3 {
+                background-image: url(../img/ecommerce3.jpg);
+            }
+
+        }
+
+        &__card-sub {
+            position: absolute;
+            padding: 0 3.5rem;
+            left: 0;
+            bottom: 0;
+            height: 54%;
+            width: 100%;
+            background-color: inherit;
+            z-index: 1000;
+
+            &-2 {
+                color: $color-white;
+                height: 60%;
+            }
+        }
+
+        &__card-span {
+            position: relative;
+            left: 16rem;
+
+            &::before {
+                content: "USD";
+                display: inline-block;
+                position: absolute;
+                font-size: 1rem;
+                top: .5rem;
+                right: 0;
+                margin-right: -2.2rem;
+            }
+        }
+
+        &__card-h2 {
+            font-weight: 700;
+            margin-top: .3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__card-h6 {
+            color: rgba($color-grey-dark-1, .8);
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+
+            &-2 {
+                color: $color-white;
+            }
+        }
+
+        &__card-items {
+            list-style: none;
+            margin-bottom: 3rem;
+        }
+
+        &__card-item {
+            margin-bottom: 1rem;
+        }
+
+        &__icon {
+            margin-right: .8rem;
+            border-radius: 50%;
+            background-color: $color-green;
+            fill: $color-black;
+            @include iconsize;
+        }
+    }
+}

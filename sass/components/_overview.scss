@@ -1,0 +1,105 @@
+.overview {
+    font-weight: 700;
+
+    &__typo {
+        text-align: center;
+        padding: 10rem 30rem;
+        padding-bottom: 0rem;
+    }
+
+    &__h6 {
+        color: $color-blue-dark;
+        text-transform: uppercase;
+        padding-bottom: .8rem;
+
+        &-edit {
+            color: rgba($color-grey-dark-1, .8);
+            padding: 1rem 7.9rem;
+        }
+    }
+
+    &__main {
+        display: flex;
+        padding: 0 29rem;
+        padding-right: 10rem;
+    }
+
+    &__main-1 {
+        padding-top: 6.9rem;
+        display: flex;
+        flex-direction: column;
+
+
+
+        &-sub-1 {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            letter-spacing: .03rem;
+        }
+
+        &-sub-2 {
+            font-weight: 500;
+            font-size: 1.1rem;
+
+            ul {
+                list-style: none;
+            }
+        }
+
+        &-lists {
+            display: flex;
+            align-items: flex-start;
+
+            &:not(:last-of-type) {
+                padding-bottom: 1rem;
+            }
+        }
+    }
+
+    &__icon {
+        margin-right: .8rem;
+        border-radius: 50%;
+        background-color: $color-yellow-dark;
+        fill: $color-white;
+        @include iconsize;
+    }
+
+    &__span {
+        flex: 1;
+    }
+
+    &__main-2 {
+        flex: 0 0 60%;
+        padding: 0;
+    }
+
+    &__bottom-edit {
+        align-self: flex-start;
+    }
+
+    ////////////////////////////
+    .overview__how-process {
+        padding: 0 10rem 2rem 10rem;
+        display: flex;
+
+        &-0 {
+            padding: 1rem;
+            margin: 0 2rem;
+            flex: 1;
+        }
+
+        &-img {
+            width: 20rem;
+        }
+
+        &-h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        &-span {
+            color: rgba($color-grey-dark-1, .8);
+        }
+    }
+
+}

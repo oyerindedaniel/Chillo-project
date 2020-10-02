@@ -104,7 +104,7 @@
     &__icon {
         margin-right: .8rem;
         border-radius: 50%;
-        background-color: #75b79e;
+        background-color: $color-green;
         fill: $color-black;
         @include iconsize;
     }
