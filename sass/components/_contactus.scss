@@ -1,0 +1,111 @@
+.contactus {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+
+    &__0 {
+        margin-top: 1.5rem;
+        padding: 0 15rem;
+        padding-left: 0;
+        flex: 0 0 50%;
+    }
+
+    &__1 {
+        background-color: $color-blue-dark;
+        padding: 7rem 4rem;
+        margin: 0 10rem;
+        padding-top: 3rem;
+        margin-right: 0;
+        flex: 1;
+
+        &-sub {
+            //            margin: 0 8rem;
+        }
+    }
+
+    &__cont-1 {}
+
+    &__cont-2 {
+        border-top: .1rem solid rgba($color-grey-dark-2, .5);
+        padding-top: 4rem;
+    }
+
+    &__h6-small {
+        margin-bottom: 1rem;
+
+        &-1 {}
+
+        &-2 {}
+
+        &-3 {
+            color: $color-green;
+        }
+
+    }
+
+    &__h6-normal {
+        color: rgba($color-grey-dark-2, .9);
+        display: inline-block;
+        margin-bottom: 4rem;
+    }
+
+    &__h3 {
+
+        &-1 {}
+
+        &-2 {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        &-3 {
+            color: $color-white;
+            display: inline-block;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__link {}
+
+    &__span {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        color: $color-blue-dark;
+    }
+
+    &__form {}
+
+    &__input {
+        border: .5rem soild rgba($color-grey-dark-2, .5);
+        padding: 1.2rem;
+
+        &-1 {
+            border-width: .005rem;
+            border-color: rgba($color-blue-light, .7);
+            border: .1rem soild rgba($color-grey-dark-2, .2);
+            padding: 1.2rem;
+            width: 100%;
+            margin-bottom: 1.3rem;
+            background-color: $color-blue-dark;
+
+            @include form;
+
+            &:focus {
+                font-family: $font-1;
+                outline: none;
+                background-color: rgba($color-blue-dark, .5);
+                color: $color-white;
+
+                &::-webkit-input-placeholder {
+                    color: $color-white;
+                }
+            }
+
+            &-edit {
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        @include form;
+    }
+}

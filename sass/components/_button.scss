@@ -4,7 +4,7 @@
     font-weight: 700;
     border: none;
     color: $color-white;
-    padding: 1.5rem 2rem;
+    padding: 1.3rem 2rem;
     text-decoration: none;
 
     &--blue {
@@ -22,4 +22,13 @@
             background-color: rgba($color-yellow-dark, .95);
         }
     }
+
+    &--green {
+        background-color: $color-green;
+
+        &:hover {
+            background-color: rgba($color-green, .95);
+        }
+    }
+
 }

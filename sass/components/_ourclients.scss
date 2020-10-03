@@ -1,0 +1,128 @@
+.our-clients {
+    background-color: $color-grey-light-1;
+    font-weight: 700;
+
+    &__heading {}
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__h6-name {
+        margin-bottom: .2rem;
+        text-transform: uppercase;
+    }
+
+    &__h6-desc {
+        font-weight: 500;
+    }
+
+    &__h6 {
+
+        &-dark {}
+
+        &-light {
+            color: rgba($color-grey-dark-1, .8);
+        }
+
+        &-1 {
+            color: rgba($color-grey-dark-1, .8);
+        }
+    }
+
+    &__0-1 {
+        display: flex;
+        flex-direction: column;
+
+        &-sub {
+            margin-top: 4.6rem;
+        }
+    }
+
+    &__h1 {}
+
+    &__h2 {
+        color: $color-blue-dark;
+    }
+
+    &__h6-1 {}
+
+    &__0-1 {
+        padding: 3rem 5rem;
+
+        &-edit {
+            padding-left: 0;
+
+            //            &-2 {
+            //                padding-right: 0;
+            //            }
+        }
+    }
+
+    &__1 {
+        flex: 1;
+    }
+
+    &__2 {
+        position: relative;
+        flex: 0 0 37.333333%;
+    }
+
+    &__3 {
+        position: relative;
+        flex: 0 0 37.333333%;
+    }
+
+    &__after::before {
+        content: "\201D";
+        position: absolute;
+        font-family: "Montserrat", Arial, Tahoma, sans-serif;
+        color: rgba($color-grey-dark-1, .4);
+        display: inline-block;
+        font-size: 6rem;
+        line-height: 1;
+        right: 4rem;
+        top: 9rem;
+    }
+
+    &__img-1 {
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2.7rem;
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem;
+    }
+
+}
+
+/////////////////////////////////////
+
+.sponsor {
+
+    &__img-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5rem;
+        padding: 5rem 0;
+        padding-bottom: 0;
+        border-top: .1rem solid rgba($color-grey-dark-2, .5);
+    }
+
+    &__img {
+        color: rgba($color-grey-dark-2, .5);
+        width: 12rem;
+        filter: grayscale(100%);
+        transition: filter .2s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+}

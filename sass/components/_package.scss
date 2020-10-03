@@ -1,5 +1,5 @@
 .package {
-    padding-bottom: 20rem;
+    padding-bottom: 8rem;
     background-color: $color-grey-light-1;
     font-weight: 700;
 
@@ -265,6 +265,8 @@
 
         &__card-item {
             margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
         }
 
         &__icon {
