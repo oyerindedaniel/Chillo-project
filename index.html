@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+    <!--    FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
     <!--    CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Chillo | Online Learning </title>
@@ -13,20 +15,38 @@
 
 <body>
     <div class="container">
-        <nav class="nav ">
+        <span class="nav__mobile-background">
+            &nbsp;
+        </span>
+        <nav class="nav">
             <span class="nav__logo">
                 chillo
             </span>
             <ul class="nav__items">
                 <li class="nav__links">
-                    <span class="nav__link nav__link--span">
-                        <span>
-                            Select course
+                    <div class="nav__links-dropdown">
+                        <span class="nav__link nav__link--span">
+                            <span>
+                                Select course
+                            </span>
+                            <svg class="nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                            </svg>
                         </span>
-                        <svg class="nav__icon">
-                            <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
-                        </svg>
-                    </span>
+                    </div>
+                    <div class="nav__subitems-main">
+                        <ul class="nav__subitems">
+                            <li class="nav__sublinks"><a href="" class="nav__sublink" target="_blank">
+                                    Our courses
+                                </a></li>
+                            <li class="nav__sublinks"><a href="https://www.instagram.com/devdan2002/" class="nav__sublink" target="_blank">
+                                    Instagram
+                                </a></li>
+                            <li class="nav__sublinks"><a href="https://twitter.com/devdan2002" class="nav__sublink" target="_blank">
+                                    Twitter
+                                </a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="nav__links nav__links--edit">
                     <a href="#" class="nav__link">
@@ -49,9 +69,82 @@
                     </a>
                 </li>
             </ul>
-            <a href="#" class="btn btn--blue">
+            <a href="#" class="btn btn--blue nav__btn">
                 Buy now
             </a>
+            <!-- Navigation small/MObile-->
+            <div class="nav__mobile">
+                <span class="nav__mob2">
+                    &nbsp;
+                </span>
+                <ul class="nav__mobile-items">
+                    <li class="nav__mobile-links-edit"><a href="#" class="nav__mobile-link nav__mobile-link-edit">
+                            <span class="nav__mobile-span">
+                                <span>
+                                    Select course
+                                </span>
+                                <svg class="nav__icon nav__mobile-icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+                    <div id="nav__subitems-main-2-control" class="nav__subitems-main-2">
+                        <ul class="nav__subitems-2">
+                            <li class="nav__sublinks-2"><a href="" class="nav__sublink-2" target="_blank">
+                                    <svg class="header-about__div--sub-2-icon nav__subicon-2">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                                    </svg>
+                                    Our courses
+                                </a></li>
+                            <li class="nav__sublinks-2"><a href="https://www.instagram.com/devdan2002/" class="nav__sublink-2" target="_blank">
+                                    <svg class="header-about__div--sub-2-icon nav__subicon-2">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                                    </svg>
+                                    Instagram
+                                </a></li>
+                            <li class="nav__sublinks-2 nav__sublinks-2-edit"><a href="https://twitter.com/devdan2002" class="nav__sublink-2" target="_blank">
+                                    <svg class="header-about__div--sub-2-icon nav__subicon-2">
+                                        <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                                    </svg>
+                                    Twitter
+                                </a></li>
+                        </ul>
+                    </div>
+                    <li class="nav__mobile-links"><a href="#" class="nav__mobile-link">
+                            <svg class="header-about__div--sub-2-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                            </svg>
+                            How it work
+                        </a></li>
+                    <li class="nav__mobile-links"><a href="#" class="nav__mobile-link">
+                            <svg class="header-about__div--sub-2-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                            </svg>
+                            About us
+                        </a></li>
+                    <li class="nav__mobile-links"><a href="##" class="nav__mobile-link">
+                            <svg class="header-about__div--sub-2-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                            </svg>
+                            Our clients
+                        </a></li>
+                    <li class="nav__mobile-links"><a href="#" class="nav__mobile-link">
+                            <svg class="header-about__div--sub-2-icon">
+                                <use xlink:href="img/sprite.svg#icon-chevron-small-right"></use>
+                            </svg>
+                            Contact us
+                        </a></li>
+                    <li class="nav__mobile-links nav__mobile-btn-main">
+                        <a href="#" class="btn btn--yellow nav__mobile-btn">
+                            Buy now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="nav__mob">
+                &nbsp;
+            </span>
         </nav>
         <main>
             <section class="header-about">
@@ -93,7 +186,6 @@
                     </ul>
                 </div>
                 <div class="header-about__conatiner--2">
-                    <!--                    <img src="img/bag.jpg" alt="Photo bag" class="header-about__img">-->
                     <div class="header-about__div">
                         <div class="header-about__div--sub">
                             <div class="header-about__div--sub-1">
@@ -141,7 +233,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="number-users-0">
+                <div class="number-users-0 number-users-0-2">
                     <div>
                         <img src="img/course-icon.png" alt="" class="number-users__img">
                     </div>
@@ -167,7 +259,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="number-users-0">
+                <div class="number-users-0 number-users-0-4">
                     <div>
                         <img src="img/course-icon3.png" alt="" class="number-users__img">
                     </div>
@@ -232,7 +324,7 @@
                         </a>
                     </div>
                     <div class="overview__main-2">
-                        <img src="img/overview-main.svg" class="" alt="overview svg">
+                        <img src="img/overview-main.svg" class="overview__icon-2" alt="overview svg">
                     </div>
                 </div>
                 <div class="overview__how-process margin-top-medium">
@@ -250,7 +342,7 @@
                         </div>
                     </div>
 
-                    <div class="overview__how-process-0">
+                    <div class="overview__how-process-0 overview__how-process-0-2">
                         <div>
                             <img src="img/course-how-icon2.png" alt="How icon" class="overview__how-process-img">
                         </div>
@@ -264,7 +356,7 @@
                         </div>
                     </div>
 
-                    <div class="overview__how-process-0">
+                    <div class="overview__how-process-0 overview__how-process-0-3">
                         <div>
                             <img src="img/course-how-icon3.png" alt="How icon" class="overview__how-process-img">
                         </div>
@@ -278,7 +370,7 @@
                         </div>
                     </div>
 
-                    <div class="overview__how-process-0">
+                    <div class="overview__how-process-0 overview__how-process-0-4">
                         <div>
                             <img src="img/course-how-icon4.png" alt="How icon" class="overview__how-process-img">
                         </div>
@@ -374,7 +466,7 @@
                             </h6>
                         </div>
                         <div class="package__hours">
-                            <div class="package__hours-0">
+                            <div class="package__hours-0 package__hours-0-edit">
                                 <span class="package__hours-0-span-1 typo--medium-3">40-60</span>
                                 <h6 class="package__hours-0-detail typo--smaller">
                                     Online course hours
@@ -454,7 +546,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="package-prices__card">
+                    <div class="package-prices__card package-prices__card-3">
                         <div class="package-prices__card-0 package-prices__card-0-3">
                             &nbsp;
                         </div>
@@ -501,10 +593,10 @@
             </section>
             <section class="our-clients">
                 <div class="our-clients__heading">
-                    <h6 class="aboutus__h6 typo--smallest">
+                    <h6 class="our-clients__h6 typo--smallest">
                         Our clients
                     </h6>
-                    <h1 class="aboutus__h1 typo--big-1 margin-bottom-small">
+                    <h1 class="our-clients__h1 typo--big-1 margin-bottom-small">
                         Join our clients. <br>
                         They have already trusted us.
                     </h1>
@@ -604,7 +696,7 @@
                         </h6>
 
                         <input class="contactus__input" type="email" placeholder="Email address">
-                        <a href="#" class="btn btn--blue">
+                        <a href="#" class="btn btn--blue contactus__btn">
                             Sign in
                         </a>
                     </div>
@@ -638,10 +730,102 @@
                             </div>
                         </div>
                     </div>
-
+            </section>
+            <section class="footer">
+                <div class="footer-available">
+                    <div class="available">
+                        <div class="available__1">
+                            <h6 class="available__h6-small available__h6-small-1 typo--smallest margin-bottom-smaller">
+                                Our Address
+                            </h6>
+                            <h6 class="available__h6-normal available__h6-normal-1 typo--smaller">
+                                100 Orchard St, <br>
+                                <span class="available__span-1">New York, NY 10002</span> <br>
+                                USA
+                            </h6>
+                        </div>
+                        <div class="available__2">
+                            <h6 class="available__h6-small available__h6-small-2 typo--smallest margin-bottom-smaller">
+                                Opening Hours
+                            </h6>
+                            <h6 class="available__h6-normal available__h6-normal-2 typo--smaller">
+                                Monday - Saturday <br>
+                                <span class="available__span-2">11:00AM - 10:00PM</span>
+                            </h6>
+                        </div>
+                        <div class="available__3">
+                            <h6 class="available__h6-normal available__h6-normal-3 typo--smaller">
+                                Sunday <br>
+                                <span class="available__span-3">12:00AM - 10:00PM</span>
+                            </h6>
+                        </div>
+                        <div class="socials">
+                            <h6 class="available__h6-small available__h6-small-3 typo--smallest margin-bottom-smaller">
+                                Developed by
+                            </h6>
+                            <a href="#" class="socials__link"><img src="img/envelope-solid.svg" class="socials__socials socials__mail" alt="mail socials"></a>
+                            <a href="#" class="socials__link"><img src="img/twitter-brands.svg" class="socials__socials socials__twitter" alt="twitter socials"></a>
+                            <a href="#" class="socials__link"><img src="img/instagram-brands.svg" class="socials__socials socials__instagram" alt="instagram socials"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-main">
+                    <ul class="footer-main__items">
+                        <li class="footer-main__links footer-main__links-spec">
+                            <span class="footer-main__link footer-main__link--span">
+                                <span>
+                                    Select course
+                                </span>
+                                <svg class="footer-main__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-small-down"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="footer-main__links footer-main__links--edit footer-main__links-spec">
+                            <a href="#" class="footer-main__link">
+                                How it work
+                            </a>
+                        </li>
+                        <li class="footer-main__links footer-main__links-spec">
+                            <a href="#" class="footer-main__link">
+                                About us
+                            </a>
+                        </li>
+                        <li class="footer-main__links footer-main__links-spec">
+                            <a href="#" class="footer-main__link">
+                                Our clients
+                            </a>
+                        </li>
+                        <li class="footer-main__links footer-main__links-spec">
+                            <a href="#" class="footer-main__link">
+                                Contact us
+                            </a>
+                        </li>
+                        <div class="footer-main__sub">
+                            <li class="footer-main__links">
+                                <a href="#" class="footer-main__link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="footer-main__links">
+                                <a href="#" class="footer-main__link footer-main__link--edit">
+                                    Cookies
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="footer-main__copyright">
+                        <h6 class="footer-main__copyright-h6 typo--smaller">
+                            Design from Dribble. <br>
+                            Developed by Oyerinde Daniel. Designed by <a href="https://dribbble.com/shots/11319989--ASSION/attachments/2930805?mode=media" class="footer-main__copyright-link" target="_blank">Mateusz Madura.</a>
+                        </h6>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

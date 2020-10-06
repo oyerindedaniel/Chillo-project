@@ -3,11 +3,20 @@
     justify-content: space-between;
     font-weight: 700;
 
+    @media only screen and (max-width: $bp-medium-3) {
+        flex-direction: column;
+    }
+
     &__0 {
         margin-top: 1.5rem;
         padding: 0 15rem;
         padding-left: 0;
         flex: 0 0 50%;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            padding: 0 5rem;
+            padding-left: 0;
+        }
     }
 
     &__1 {
@@ -17,6 +26,18 @@
         padding-top: 3rem;
         margin-right: 0;
         flex: 1;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            margin-left: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-largest-4) {
+            margin-left: 0;
+        }
+
+        @media only screen and (max-width: $bp-medium-3) {
+            margin-top: 4rem;
+        }
 
         &-sub {
             //            margin: 0 8rem;
@@ -46,7 +67,7 @@
     &__h6-normal {
         color: rgba($color-grey-dark-2, .9);
         display: inline-block;
-        margin-bottom: 4rem;
+        margin-bottom: 4.2rem;
     }
 
     &__h3 {
@@ -71,13 +92,29 @@
         display: inline-block;
         margin-bottom: 1.5rem;
         color: $color-blue-dark;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            font-size: 3rem;
+        }
     }
 
     &__form {}
 
+    &__btn {}
+
     &__input {
         border: .5rem soild rgba($color-grey-dark-2, .5);
         padding: 1.2rem;
+        width: 80%;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: $bp-largest-1) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
 
         &-1 {
             border-width: .005rem;
@@ -87,6 +124,7 @@
             width: 100%;
             margin-bottom: 1.3rem;
             background-color: $color-blue-dark;
+            color: $color-white;
 
             @include form;
 
@@ -107,5 +145,15 @@
         }
 
         @include form;
+
+        &:focus {
+            font-family: $font-1;
+            outline: none;
+            color: $color-black;
+
+            &::-webkit-input-placeholder {
+                color: $color-black;
+            }
+        }
     }
 }

@@ -4,6 +4,11 @@
         display: flex;
         align-items: center;
 
+        @media only screen and (max-width: $bp-largest-4) {
+            flex-direction: column;
+            margin: -5rem 0 10rem 0;
+        }
+
     }
 
     &__img {
@@ -15,13 +20,48 @@
     &__image {
         width: 50rem;
         height: 50rem;
+
+        @media only screen and (max-width: $bp-small-1) {
+            display: none;
+        }
     }
 
     &__main {
         flex: 1;
+
+        @media only screen and (max-width: $bp-largest-4) {
+            padding: 0 11rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            padding: 0 8rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-3) {
+            display: flex;
+            flex-direction: column;
+            padding: 0 5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-4) {
+            padding: 0;
+            text-align: justify;
+        }
     }
 
-    &__h6-1 {}
+    &__h1 {
+        @media only screen and (max-width: $bp-medium-3) {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+
+    &__h6-1 {
+        @media only screen and (max-width: $bp-medium-3) {
+            align-items: center;
+            text-align: center;
+        }
+    }
 
     &__h6-2 {
         color: rgba($color-grey-dark-1, .8);

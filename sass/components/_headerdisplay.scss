@@ -7,6 +7,21 @@
         padding: 7.5rem 15rem;
         padding-left: 10rem;
         flex: 0 0 58%;
+
+        @media only screen and (max-width: $bp-largest-3) {
+            padding: 3.5rem 5rem;
+            flex: 0 0 50%;
+        }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            text-align: center;
+            padding: 7rem;
+            flex: 1;
+        }
+
+        @media only screen and (max-width: $bp-small-1) {
+            padding: 3rem;
+        }
     }
 
     &__conatiner--2 {
@@ -15,6 +30,16 @@
         background-position: top;
         position: relative;
         flex: 1;
+
+        @media only screen and (max-width: $bp-largest-3) {
+            flex: 0 0 50%;
+        }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 100%;
+            height: 470px;
+            flex: 1;
+        }
     }
 
     &__div {
@@ -110,3 +135,8 @@
     }
 
 }
+
+
+//    @media only screen and (max-width: $bp-largest-2) {
+//        font-size: 56.25%;
+//    }

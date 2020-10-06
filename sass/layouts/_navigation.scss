@@ -6,13 +6,27 @@
     font-size: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    //    background-color: orangered;
+    z-index: 99999;
+    padding: 0;
+
+
+    @media only screen and (max-width: $bp-medium-2) {
+        margin-bottom: 2rem;
+    }
 
     &__logo {
         font-size: 3rem;
         font-family: $font-2;
         margin-left: 10rem;
         position: relative;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            margin-left: 5rem;
+        }
     }
 
     &__logo::after {
@@ -22,11 +36,13 @@
         font-family: $font-1;
         font-weight: 700;
         font-size: 1rem;
-        color: rgba($color-black, .7);
+        color: inherit;
         position: absolute;
         left: 0;
         bottom: 0;
         width: 15rem;
+
+
     }
 
     &__items {
@@ -35,10 +51,20 @@
         margin-left: 7rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-largest-1) {
+            margin-left: -3rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-1) {
+            display: none;
+        }
+
     }
 
     &__links {
         padding: 1rem;
+        position: relative;
 
         &:first-of-type {
             padding: 0 2rem;
@@ -62,6 +88,7 @@
         &:focus {
             outline: none;
             background-color: $color-grey-light-1;
+            color: $color-black;
             transform: translateY(-.3rem);
             box-shadow: 0 .1rem .05rem rgba($color-black, 0.3);
         }
@@ -71,10 +98,327 @@
         }
     }
 
+    &__btn {
+        @media only screen and (max-width: $bp-largest-1) {
+            margin-right: 5rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-1) {
+            display: none;
+        }
+
+        &-1 {
+            margin-right: 3rem;
+        }
+    }
+
     &__icon {
         height: 1.5rem;
         width: 1.5rem;
         margin-left: .5rem;
+    }
+
+    ////////NAV MOBILE
+
+    &__mobile {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background-image: linear-gradient(to left top, rgba($color-blue-dark, 1), rgba($color-blue-light, 1));
+        width: 30rem;
+        z-index: 5000;
+        text-align: left;
+        padding: 7rem 4rem;
+        transition: all .8s;
+        transform: translateX(100%);
+
+        &-items {
+            font-weight: 500;
+            font-size: 1.5rem;
+            list-style: none;
+        }
+
+        &-links {
+            margin-bottom: 1rem;
+            position: relative;
+
+            &:not(:last-of-type) {
+                padding: 1.5rem;
+                display: inline-block;
+                transition: all 1s;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    background-color: $color-black;
+                    z-index: -1;
+                    transform: scale(0, 1);
+                    transform-origin: left;
+                    transition: all .8s;
+                }
+
+                &:hover {
+                    transform: translateX(1rem);
+                }
+
+                &:hover::before,
+                &:active::before {
+                    outline: none;
+                    transform: scale(1, 1);
+                }
+
+
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $color-white;
+        }
+
+        &-background {
+            background-color: rgba($color-black, .6);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 4000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .8s;
+        }
+
+        &-links-edit {
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: context-menu;
+
+            &:hover {
+                background-color: $color-black;
+            }
+        }
+
+        &-link-edit {
+            cursor: context-menu;
+        }
+
+        &-icon {
+            fill: $color-white;
+        }
+
+        &-span {
+            display: flex;
+            align-items: center;
+        }
+
+        &-btn-main {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        &-btn {
+            font-weight: 500;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__mob {
+        width: 4rem;
+        height: .3rem;
+        background-color: $color-black;
+        position: relative;
+        top: 0rem;
+        right: 5rem;
+        cursor: pointer;
+        display: none;
+
+        @media only screen and (max-width: $bp-medium-1) {
+            display: inline-block;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -1rem;
+            left: 0;
+            background-color: inherit;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: -1rem;
+            left: 0;
+            background-color: inherit;
+        }
+
+    }
+
+    &__mob2 {
+        display: inline-block;
+        width: 4rem;
+        height: .3rem;
+        position: relative;
+        top: -3rem;
+        left: 18rem;
+        cursor: pointer;
+        background-color: transparent;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $color-white;
+            transform: rotate(45deg);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: $color-white;
+            transform: rotate(-45deg);
+        }
+
+        &:hover::after,
+        &:hover::before {
+            background-color: $color-black;
+        }
+    }
+
+    &__subitems-main {
+        position: absolute;
+        background-color: $color-white;
+        top: 5.5rem;
+        left: 2rem;
+        box-sizing: content-box;
+        transition: all .3s;
+        transform: scale(0);
+        transform-origin: top;
+    }
+
+    &__subitems {
+        list-style: none;
+    }
+
+    &__sublinks {
+        text-align: center;
+        font-weight: 700;
+        background-color: $color-grey-light-1;
+        position: relative;
+        z-index: 1;
+        margin-bottom: .1rem;
+    }
+
+    &__sublinks:hover &__sublink {
+        color: $color-white;
+    }
+
+    &__sublink {
+        color: $color-black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 1rem 3rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $color-black;
+            z-index: -1;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform .8s;
+        }
+
+        &:hover::before,
+        &:focus::before {
+            outline: none;
+            transform: scale(1, 1);
+            transform-origin: left;
+        }
+
+        &:focus {
+            outline: none;
+            color: white;
+        }
+
+    }
+
+    &__subitems-main-2 {
+        display: none;
+    }
+
+    &__subitems-2 {
+        font-size: 1.5rem;
+    }
+
+    &__sublinks-2 {
+        font-weight: 500;
+        list-style: none;
+        margin-bottom: 1rem;
+        transition: all .8s;
+
+        &:hover {
+            transform: translateX(-1rem);
+        }
+    }
+
+    &__sublink-2 {
+        display: inline-block;
+        padding: 1.5rem;
+        color: $color-white;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $color-black;
+            z-index: -1;
+            transform-origin: right;
+            transform: scale(0, 1);
+            transition: all .8s;
+        }
+
+        &:hover::before,
+        &:focus::before {
+            outline: none;
+            transform: scale(1, 1);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    &__subicon-2 {
+        fill: $color-white;
     }
 
 }

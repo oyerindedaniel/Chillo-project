@@ -7,6 +7,11 @@
     &__typo {
         padding-top: 8rem;
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium-3) {
+            padding: 6rem 4rem;
+            padding-bottom: 2rem;
+        }
     }
 
     &__h6 {
@@ -48,9 +53,36 @@
         display: flex;
         justify-content: space-between;
 
+        @media only screen and (max-width: $bp-medium-3) {
+            margin-top: 3rem;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         &__0 {
             padding: 0 5rem;
             flex: 0 0 50%;
+
+            @media only screen and (max-width: $bp-medium-1) {
+                padding: 0 3rem;
+            }
+
+            @media only screen and (max-width: $bp-medium-2) {
+                padding: 0;
+            }
+
+            @media only screen and (max-width: $bp-medium-3) {
+                margin-bottom: 5rem;
+                text-align: center;
+            }
+        }
+
+        &__h1 {
+            @media only screen and (max-width: $bp-medium-3) {
+                font-size: 3rem;
+            }
+
         }
 
         &__h2 {
@@ -66,20 +98,42 @@
             padding: 0 7rem;
             flex: 1;
             margin-left: 2rem;
+
+            @media only screen and (max-width: $bp-medium-1) {
+                padding: 0 3rem;
+            }
+
+            @media only screen and (max-width: $bp-medium-2) {
+                padding: 0;
+            }
         }
     }
 
     &__items-0 {
         margin-bottom: 5rem;
+
+        @media only screen and (max-width: $bp-medium-3) {
+            margin-bottom: 2rem;
+        }
     }
 
     &__item-0 {
         list-style: none;
+
+        @media only screen and (max-width: $bp-medium-3) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__list-0 {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium-3) {
+            padding-bottom: 1rem;
+        }
     }
 
     &__icon {
@@ -120,6 +174,11 @@
         padding: 2rem 0 2.5rem 0;
         border-bottom: .1rem solid rgba($color-grey-dark-2, .5);
 
+        @media only screen and (max-width: $bp-largest-2) {
+            flex-direction: column;
+        }
+
+
         &-0-span-1 {
             position: relative;
 
@@ -151,6 +210,10 @@
         &-0-detail {
             color: rgba($color-grey-dark-1, .8);
         }
+
+        &-0-edit {
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__infinte {
@@ -169,6 +232,16 @@
         display: flex;
         justify-content: space-between;
         margin-top: 12rem;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: $bp-largest-2) {
+            padding: 0 20rem;
+        }
+
+        @media only screen and (max-width: $bp-largest-3) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         &__card {
             width: 30rem;
@@ -179,11 +252,25 @@
             box-shadow: 0 .5rem 1.5rem rgba($color-black, .3);
             overflow: hidden;
 
+            @media only screen and (max-width: $bp-largest-3) {
+                margin-bottom: 5rem;
+                width: 40rem;
+                ;
+            }
+
+
             &-2 {
                 margin-top: -3rem;
                 background-color: $color-blue-dark;
                 height: 55rem;
+
+                @media only screen and (max-width: $bp-largest-3) {
+                    margin: 0;
+                    margin-bottom: 5rem;
+                }
             }
+
+            &-3 {}
 
             &:hover {
                 transform: translateY(-1.5rem);
@@ -221,6 +308,12 @@
             background-color: inherit;
             z-index: 1000;
 
+            @media only screen and (max-width: $bp-largest-3) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             &-2 {
                 color: $color-white;
                 height: 60%;
@@ -230,6 +323,10 @@
         &__card-span {
             position: relative;
             left: 16rem;
+
+            @media only screen and (max-width: $bp-largest-3) {
+                left: 0;
+            }
 
             &::before {
                 content: "USD";
@@ -252,6 +349,10 @@
             color: rgba($color-grey-dark-1, .8);
             margin-bottom: 2.5rem;
             font-weight: 500;
+
+            @media only screen and (max-width: $bp-largest-3) {
+                text-align: center;
+            }
 
             &-2 {
                 color: $color-white;

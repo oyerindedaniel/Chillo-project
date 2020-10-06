@@ -12,6 +12,17 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    position: relative;
+
+    @media only screen and (max-width: $bp-largest-3) {
+        font-size: 56.25%;
+    }
+
+    @media only screen and (max-width: $bp-small-2) {
+        font-size: 50%;
+    }
+
+
 }
 
 body {
@@ -21,10 +32,10 @@ body {
 }
 
 a {
-//    text-decoration: none;
+    //    text-decoration: none;
 }
 
-//::selection {
-//    background-color: $color-blue-1;
-//    color: $color-white;
-//}
+::selection {
+    background-color: rgba($color-blue-light, .7);
+    color: $color-white;
+}
