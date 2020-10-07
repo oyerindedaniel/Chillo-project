@@ -7,6 +7,9 @@ const navdropdownmobile = document.querySelector(".nav__mobile-links-edit");
 const navdropdownmobilecontrol = document.getElementById("nav__subitems-main-2-control");
 const sidenav = document.querySelector(".nav__mobile");
 
+//When link is clicked
+const allnavitems = document.querySelectorAll(".nav__mobile-links");
+
 
 opennavhamburger.addEventListener("click", showNav);
 closenavhamburger.addEventListener("click", hideNav);
@@ -33,13 +36,23 @@ function navDrop(event) {
     navdropdownitems.style.transform = "scale(1)";
 }
 
+//When link is clicked
+allnavitems.forEach(allnavitem => {
+    allnavitem.addEventListener("click", closenav)
+});
+
+function closenav(event) {
+    console.log("worked");
+    sidenav.removeAttribute("style");
+    navbackground.removeAttribute("style");
+}
+
+
 const nav = document.querySelector(".nav");
 const container = document.querySelector(".container");
 const navButton = document.querySelector(".nav__btn");
 const navmob = document.querySelector(".nav__mob");
 
-
-//nav__btn-1
 window.addEventListener('scroll', () => {
     var {
         scrollTop,
@@ -82,3 +95,18 @@ $(document).click(function (event) {
         found.removeAttr("style");
     }
 });
+
+
+//////////////////////////////////////
+//Hide main subnav when clicked
+
+const navdropdownhides = document.querySelectorAll(".nav__sublink");
+
+navdropdownhides.forEach(navdropdownhide => {
+    navdropdownhide.addEventListener("click", hidemainsubnav);
+});
+
+function hidemainsubnav(event) {
+    console.log("Prick");
+    navdropdownitems.removeAttribute("style");
+}
