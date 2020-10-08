@@ -262,10 +262,10 @@
                 width: 40rem;
             }
 
-            //            @media only screen and (max-width: $bp-small-2) {
-            //                width: 30rem;
-            //            }
-
+            @media only screen and (max-width: $bp-small-2) {
+                margin-bottom: 5rem;
+                width: 35rem;
+            }
 
             &-2 {
                 margin-top: -3rem;
