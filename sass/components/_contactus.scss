@@ -17,6 +17,10 @@
             padding: 0 5rem;
             padding-left: 0;
         }
+
+        @media only screen and (max-width: $bp-small-1) {
+            padding: 0;
+        }
     }
 
     &__1 {
@@ -39,9 +43,7 @@
             margin-top: 4rem;
         }
 
-        &-sub {
-            //            margin: 0 8rem;
-        }
+        &-sub {}
     }
 
     &__cont-1 {}

@@ -269,6 +269,9 @@ body {
       .contactus__0 {
         padding: 0 5rem;
         padding-left: 0; } }
+    @media only screen and (max-width: 31.25em) {
+      .contactus__0 {
+        padding: 0; } }
   .contactus__1 {
     background-color: #2c2292;
     padding: 7rem 4rem;
@@ -751,6 +754,9 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center; } }
+    @media only screen and (max-width: 25em) {
+      .package-main {
+        padding: 0 4rem; } }
     .package-main__0 {
       padding: 0 5rem;
       flex: 0 0 50%; }
@@ -883,6 +889,9 @@ body {
         .package-prices__card {
           margin-bottom: 5rem;
           width: 40rem; } }
+      @media only screen and (max-width: 25em) {
+        .package-prices__card {
+          width: 30rem; } }
       .package-prices__card-2 {
         margin-top: -3rem;
         background-color: #2c2292;
@@ -939,6 +948,9 @@ body {
       font-weight: 700;
       margin-top: .3rem;
       margin-bottom: 1.5rem; }
+      @media only screen and (max-width: 25em) {
+        .package-prices__card-h2 {
+          text-align: center; } }
     .package-prices__card-h6 {
       color: rgba(51, 51, 51, 0.8);
       margin-bottom: 2.5rem;
