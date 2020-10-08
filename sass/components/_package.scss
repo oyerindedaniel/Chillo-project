@@ -245,7 +245,7 @@
         @media only screen and (max-width: $bp-largest-3) {
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            padding: 0;
         }
 
         &__card {
@@ -262,9 +262,9 @@
                 width: 40rem;
             }
 
-            @media only screen and (max-width: $bp-small-2) {
-                width: 30rem;
-            }
+            //            @media only screen and (max-width: $bp-small-2) {
+            //                width: 30rem;
+            //            }
 
 
             &-2 {
