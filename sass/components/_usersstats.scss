@@ -9,7 +9,9 @@
         flex-wrap: wrap;
 
         @media only screen and (max-width: $bp-largest-4) {
-            margin-bottom: 3rem;
+            flex: 0 0 50%;
+            justify-content: center;
+            margin-bottom: 2rem;
         }
 
         @media only screen and (max-width: $bp-small-2) {

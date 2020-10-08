@@ -8,14 +8,11 @@
     align-items: center;
     margin-bottom: 1rem;
     width: 100%;
-
-    //    background-color: orangered;
-    z-index: 99999;
-    padding: 0;
-
+    z-index: 999999;
 
     @media only screen and (max-width: $bp-medium-2) {
         margin-bottom: 2rem;
+        padding-bottom: .5rem;
     }
 
     &__logo {
@@ -41,6 +38,10 @@
         left: 0;
         bottom: 0;
         width: 15rem;
+
+        @media only screen and (max-width: $bp-medium-2) {
+            bottom: -.3rem;
+        }
 
 
     }
@@ -241,6 +242,11 @@
         @media only screen and (max-width: $bp-medium-1) {
             display: inline-block;
         }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            top: .5rem;
+        }
+
 
         &::after {
             content: "";
