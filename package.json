@@ -1,25 +1,35 @@
 {
-    "name": "learn-project",
-    "version": "1.0.0",
-    "description": "Learn project ",
-    "main": "index.js",
-    "scripts": {
-        "watch:sass": "node-sass sass/main.scss css/style.css -w",
-        "devserver": "live-server",
-        "start": "npm-run-all --parallel devserver watch:sass",
-        "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-        "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
-        "browserslist": "last 10 versions",
-        "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-        "build:css": "npm-run-all compile:sass prefix:css compress:css"
-    },
-    "author": "Oyerinde Daniel",
-    "license": "ISC",
-    "devDependencies": {
-        "autoprefixer": "^9.8.6",
-        "concat": "^1.0.3",
-        "node-sass": "^4.14.1",
-        "npm-run-all": "^4.1.5",
-        "postcss-cli": "^8.0.0"
-    }
+  "name": "learn-project",
+  "version": "1.0.0",
+  "description": "Learn project ",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
+    "browserslist": "last 10 versions",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Oyerinde Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oyerindedaniel/Chillo-project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/oyerindedaniel/Chillo-project/issues"
+  },
+  "homepage": "https://github.com/oyerindedaniel/Chillo-project#readme"
 }
